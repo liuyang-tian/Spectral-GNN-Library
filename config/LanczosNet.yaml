@@ -1,0 +1,27 @@
+---
+device: 5
+dataset: cora  # ['cora', 'citeseer', 'pubmed', 'computers', 'photo', 'chameleon', 'squirrel', 'actor', 'texas', 'cornell']
+train_rate: 0.6
+val_rate: 0.2
+
+ 
+data_process:
+  laplacian_type: L3   # D^{-1/2} A+I D^{-1/2}
+  add_self_loop: True
+  need_EVD: True
+  k: 220
+
+model:
+  name: LanczosNet
+  short_diffusion_list: [1, 2, 3]
+  long_diffusion_list: [1, 2, 3, 5, 7, 10, 20, 30]
+  mlp_dim: 16
+  num_layer: 1
+  hidden_dim: 50
+
+train:
+  epochs: 2000
+  early_stopping: 200
+  dropout: 0.08
+  lr: 0.02
+  weight_decay: 0.0005

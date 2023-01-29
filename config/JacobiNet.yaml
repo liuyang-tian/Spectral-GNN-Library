@@ -1,0 +1,30 @@
+---
+device: 5
+dataset: cora  # ['cora', 'citeseer', 'pubmed', 'computers', 'photo', 'chameleon', 'squirrel', 'actor', 'texas', 'cornell']
+train_rate: 0.6
+val_rate: 0.2
+
+data_process:
+  laplacian_type: L3   # D^{-1/2} A D^{-1/2}
+
+model:
+  name: JacobiNet
+  a: 2.0
+  b: -0.25
+  alpha: 0.5
+  k: 10
+  num_layer: 1
+  hidden_dim: 200
+
+train:
+  epochs: 2000
+  early_stopping: 200
+  dropout: 0.05
+  dprate: 0.05
+  emb_lr: 0.03
+  emb_weight_decay: 0.001
+  conv_lr: 0.01
+  conv_weight_decay: 0.0001
+  comb_lr: 0.01
+  comb_weight_decay: 0.00005
+

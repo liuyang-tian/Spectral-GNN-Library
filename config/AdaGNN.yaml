@@ -1,0 +1,36 @@
+---
+device: 5
+dataset: cora  # ['cora', 'citeseer', 'pubmed', 'computers', 'photo', 'chameleon', 'squirrel', 'actor', 'texas', 'cornell']
+train_rate: 0.6
+val_rate: 0.2
+
+data_process:
+  # symmetric normalized Laplacian matrix
+  laplacian_type: L2     # L = I - D^{-1/2} A D^{-1/2}
+  epsilon: -0.5
+  add_self_loop: True
+
+  # random-walk normalized Laplacian matrix
+  # laplacian_type: L4     # L = D^(-1) @ L
+  # epsilon: -1
+  # add_self_loop: True
+
+
+model:
+  name: AdaGNN
+  bias: True
+  num_layer: 12
+  hidden_dim: 32
+
+train:
+  epochs: 2000
+  early_stopping: 200
+  dropout: 0.2
+  lr: 0.001
+  weight_decay: 0.000009
+  l1norm: 0.000001
+  l2norm: 0.000005
+
+
+
+

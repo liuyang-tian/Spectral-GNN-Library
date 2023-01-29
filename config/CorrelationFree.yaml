@@ -1,0 +1,35 @@
+---
+device: 5
+dataset: cora  # ['cora', 'citeseer', 'pubmed', 'computers', 'photo', 'chameleon', 'squirrel', 'actor', 'texas', 'cornell']
+train_rate: 0.6
+val_rate: 0.2
+
+data_process:
+  # eps or rho
+  basis: eps
+  shift_ratio: 0.0
+
+  # basis = eps
+  laplacian_type: L2   # I - D^{-1/2} (A+I) D^{-1/2}
+  add_self_loop: True
+  epsilon: -0.5 #-0.5
+
+  # basis = rho
+  # laplacian_type: L0
+  # add_self_loop: True
+  # need_EVD: True
+  # epsilon: 0.1
+
+
+model:
+  name: CorrelationFree
+  k: 5
+  num_layer: 1
+  hidden_dim: 70
+
+train:
+  epochs: 2000
+  early_stopping: 200
+  dropout: 0.0008
+  lr: 0.012
+  weight_decay: 0.0025

@@ -1,0 +1,24 @@
+---
+device: 5
+dataset: cora  # ['cora', 'citeseer', 'pubmed', 'computers', 'photo', 'chameleon', 'squirrel', 'actor', 'texas', 'cornell']
+train_rate: 0.6
+val_rate: 0.2
+
+data_process:
+  laplacian_type: L2    # L = I - D^{-1/2} A D^{-1/2}
+  need_EVD: True
+  eigen_sorted: False
+
+model:
+  name: ChebyNet2
+  k: 15
+  num_layer: 1
+  hidden_dim: 16
+
+train:
+  epochs: 1000
+  early_stopping: 200
+  dropout: 0.4
+  lr: 0.009
+  mlp_lr: 0.01
+  weight_decay: 0.0005

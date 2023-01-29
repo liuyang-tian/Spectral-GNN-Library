@@ -1,0 +1,22 @@
+---
+device: 5
+dataset: cora  # ['cora', 'citeseer', 'pubmed', 'computers', 'photo', 'chameleon', 'squirrel', 'actor', 'texas', 'cornell']
+train_rate: 0.6
+val_rate: 0.2
+
+data_process:
+  laplacian_type: L3    # L = D^{-1/2} A D^{-1/2}
+
+model:
+  name: FAGCN
+  eps: 0.5
+  num_layer: 1
+  hidden_dim: 330
+
+train:
+  epochs: 2000
+  early_stopping: 200
+  dropout: 0.35
+  dprate: 0.7
+  lr: 0.005
+  weight_decay: 0.006

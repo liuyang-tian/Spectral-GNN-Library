@@ -1,0 +1,36 @@
+---
+device: 5
+dataset: cora  # ['cora', 'citeseer', 'pubmed', 'computers', 'photo', 'chameleon', 'squirrel', 'actor', 'texas', 'cornell']
+train_rate: 0.6
+val_rate: 0.2
+
+data_process:
+  # object graph
+  # ['chameleon', 'squirrel', 'actor', 'texas', 'cornell']: L3   L = D^-0.5 @ A+I @ D^-0.5
+  # ['cora', 'citeseer', 'pubmed', 'computers', 'photo']: L5     L = D^-1 @ (A+I)
+  laplacian_type: L5
+  epsilon: -1
+  add_self_loop: True
+  alpha: 12
+  taubin_lambda: 1.0
+  taubin_mu: 1.0
+  taubin_repeat: 2
+  
+  # attribute graph
+  F:
+    laplacian_type: L3   # D^-0.5 @ A+I @ D^-0.5
+    add_self_loop: True
+
+model:
+  name: DSGC
+  num_layer: 1
+  hidden_dim: 200
+
+train:
+  epochs: 2000
+  early_stopping: 200
+  dprate: 0.05
+  lr: 0.07
+  weight_decay: 0.0005
+
+

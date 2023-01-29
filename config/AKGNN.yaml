@@ -1,0 +1,20 @@
+---
+device: 5
+dataset: cora  # ['cora', 'citeseer', 'pubmed', 'computers', 'photo', 'chameleon', 'squirrel', 'actor', 'texas', 'cornell']
+train_rate: 0.6
+val_rate: 0.2
+
+data_process:
+  laplacian_type: L0     # A
+
+model:
+  name: AKGNN
+  num_layer: 6
+  hidden_dim: 50
+
+train:
+  epochs: 2000
+  early_stopping: 200
+  dprate: 0.6
+  lr: 0.03
+  weight_decay: 0.0015

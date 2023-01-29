@@ -1,0 +1,27 @@
+---
+device: 5
+dataset: cora  # ['cora', 'citeseer', 'pubmed', 'computers', 'photo', 'chameleon', 'squirrel', 'actor', 'texas', 'cornell']
+train_rate: 0.6
+val_rate: 0.2
+
+data_process:  
+  laplacian_type: L2    # L = I - D^{-1/2} A D^{-1/2}
+  need_EVD: True
+  eigen_sorted: True
+
+
+model:
+  name: SpectralNet
+  k: 600
+  num_layer: 2
+  hidden_dim: 20
+
+train:
+  epochs: 2000
+  early_stopping: 200
+  dropout: 0.02
+  dprate: 0.02
+  lr: 0.025
+  weight_decay: 0.001
+
+

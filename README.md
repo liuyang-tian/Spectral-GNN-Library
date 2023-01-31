@@ -1,5 +1,5 @@
 # Gamma-Spec
-Gamma-Spec is a spectral graph neural network learning library based on PyTorch. This open-source framework integrates a variety of spectral neural network models, builds a unified underlying platform, encapsulates the data processing process, unifies the input and output interfaces, and summarizes and abstracts the key operators of the algorithm. And then we evaluate the performance of the models under a unified evaluation standard.
+Gamma-Spec is a spectral graph neural network learning library based on PyTorch. This open-source framework integrates a variety of spectral neural network models, builds a unified underlying platform, encapsulates the data processing process, unifies the input and output interfaces, abstracts the key operators of the algorithm, and visualizes the filters. And we evaluate the performance of the models under a unified evaluation standard.
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/liuyang-tian/Spectral-GNN-Library/master/Overall%20Architecture.png" width="600">

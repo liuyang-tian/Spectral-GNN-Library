@@ -5,9 +5,6 @@ Gamma-Spec is a spectral graph neural network learning library based on PyTorch.
 
 
 ## Supported Models
-<style>
-td{width:150px;}
-</style>
 <table>
     <tr>
         <td style="border:0"><a href="https://arxiv.org/abs/2104.12840">AdaGNN</a></td>

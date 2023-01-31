@@ -10,35 +10,34 @@ Gamma-Spec is a spectral graph neural network learning library based on PyTorch.
 ## Supported Models
 <table>
     <tr>
-        <td style="border:0"><a href="https://arxiv.org/abs/2104.12840">AdaGNN</a></td>
-        <td style="border:0"> <a href="https://arxiv.org/abs/2112.07160">Correlation-free</a></td>
+        <td><a href="https://arxiv.org/abs/2104.12840">AdaGNN</a></td>
+        <td> <a href="https://arxiv.org/abs/2112.07160">Correlation-free</a></td>
     </tr>
     <tr>
-        <td style="border:0"><a href="https://arxiv.org/abs/2112.04575">AKGNN</a></td>
-        <td style="border:0"><a href="https://arxiv.org/abs/1909.12038">DSGC</a></td>
+        <td><a href="https://arxiv.org/abs/2112.04575">AKGNN</a></td>
+        <td><a href="https://arxiv.org/abs/1909.12038">DSGC</a></td>
     </tr>
     <tr>
-        <td style="border:0"><a href="https://arxiv.org/abs/1901.01343">ARMA</a></td>
-        <td style="border:0"><a href="https://arxiv.org/abs/2101.00797">FAGCN</a></td>
+        <td><a href="https://arxiv.org/abs/1901.01343">ARMA</a></td>
+        <td><a href="https://arxiv.org/abs/2101.00797">FAGCN</a></td>
     </tr>
     <tr>
-        <td style="border:0"><a href="https://arxiv.org/abs/2106.10994">BernNet</a></td>
-        <td style="border:0"><a href="https://arxiv.org/abs/2006.07988">GPR-GNN</a></td>
+        <td><a href="https://arxiv.org/abs/2106.10994">BernNet</a></td>
+        <td><a href="https://arxiv.org/abs/2006.07988">GPR-GNN</a></td>
     </tr>
     <tr>
-        <td style="border:0"><a href="https://arxiv.org/abs/1705.07664">CayleyNet</a></td>
-        <td style="border:0"><a href="https://arxiv.org/abs/2205.11172">JacobiNet</a></td>
+        <td><a href="https://arxiv.org/abs/1705.07664">CayleyNet</a></td>
+        <td><a href="https://arxiv.org/abs/2205.11172">JacobiNet</a></td>
     </tr>
     <tr>
-        <td style="border:0"><a href="https://arxiv.org/abs/1606.09375">ChebyNet</a></td>
-        <td style="border:0"><a href="https://arxiv.org/abs/1901.01484">LanczosNet</a></td>
+        <td><a href="https://arxiv.org/abs/1606.09375">ChebyNet</a></td>
+        <td><a href="https://arxiv.org/abs/1901.01484">LanczosNet</a></td>
     </tr>
     <tr>
-        <td style="border:0"><a href="https://arxiv.org/abs/2202.03580">ChebyNetII</a></td>
-        <td style="border:0"><a href="https://arxiv.org/abs/1312.6203">SpectralNet</a></td>
+        <td><a href="https://arxiv.org/abs/2202.03580">ChebyNetII</a></td>
+        <td><a href="https://arxiv.org/abs/1312.6203">SpectralNet</a></td>
     </tr>
 </table>
-
 
 
 ## Setup

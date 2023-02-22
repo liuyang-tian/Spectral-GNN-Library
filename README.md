@@ -47,17 +47,17 @@ Gamma-Spec is a spectral graph neural network learning library based on PyTorch.
 conda create -n sgl python=3.9.12
 source activate sgl
 ```
+
 **2. Install Backend and Libraries**
 ```bash
-pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
-pip install torch-scatter torch-sparse -f https://data.pyg.org/whl/torch-1.13.0+cu116.html
-pip install dgl-cu116 dglgo -f https://data.dgl.ai/wheels/repo.html
-pip install -r requirements.txt
+pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
+pip install pyg-lib torch-scatter==2.0.9 torch-sparse==0.6.15 torch-cluster torch-spline-conv torch-geometric==1.7.2 -f https://data.pyg.org/whl/torch-1.11.0+cu113.html
+pip install --pre dgl -f https://data.dgl.ai/wheels/cu113/repo.html
+pip install --pre dglgo -f https://data.dgl.ai/wheels-test/repo.html
+pip install matplotlib==3.5.1 easydict==1.10
 ```
 
-
 ## Run the Examples
-
 ```bash
 cd examples
 python adagnn_trainer.py

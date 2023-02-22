@@ -23,7 +23,7 @@ def pmi(co_occurrence_matrix, positive=True):
     pmi_matrix[np.isinf(pmi_matrix)] = 0.0  # log(0) = 0
     if positive:
         pmi_matrix[pmi_matrix < 0] = 0.0
-    return pmi_matrix
+    return pmi_matrix.cpu().numpy()
 
 def construct_pmi_matrix(features, dataset):
     dir='../datasets/'+ dataset +'/pmi'
